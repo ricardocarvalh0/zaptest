@@ -35,3 +35,8 @@ app.post('/', (req, res) => {
 app.listen(port, () => {
     console.log(`\nListening on port ${port}\n`);
 });
+
+// Route for GET requests
+app.get('/casablanca', (req, res) => {
+    res.status(200).send('CASABLANCA MARMORES E GRANITOS');
+});
